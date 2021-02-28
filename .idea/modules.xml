@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm/Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DSA.iml" filepath="$PROJECT_DIR$/.idea/DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HackerEarthCoding/HackerEarthCoding.iml" filepath="$PROJECT_DIR$/HackerEarthCoding/HackerEarthCoding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCodeCoding/LeetCodeCoding.iml" filepath="$PROJECT_DIR$/LeetCodeCoding/LeetCodeCoding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hackerRankCoding/hackerRankCoding.iml" filepath="$PROJECT_DIR$/hackerRankCoding/hackerRankCoding.iml" />
+    </modules>
+  </component>
+</project>
