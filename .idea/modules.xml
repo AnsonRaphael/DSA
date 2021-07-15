@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm/Algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DSA.iml" filepath="$PROJECT_DIR$/.idea/DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GFG/GFG.iml" filepath="$PROJECT_DIR$/GFG/GFG.iml" />
       <module fileurl="file://$PROJECT_DIR$/HackerEarthCoding/HackerEarthCoding.iml" filepath="$PROJECT_DIR$/HackerEarthCoding/HackerEarthCoding.iml" />
       <module fileurl="file://$PROJECT_DIR$/HackerRankCoding/HackerRankCoding.iml" filepath="$PROJECT_DIR$/HackerRankCoding/HackerRankCoding.iml" />
       <module fileurl="file://$PROJECT_DIR$/LeetCodeCoding/LeetCodeCoding.iml" filepath="$PROJECT_DIR$/LeetCodeCoding/LeetCodeCoding.iml" />
