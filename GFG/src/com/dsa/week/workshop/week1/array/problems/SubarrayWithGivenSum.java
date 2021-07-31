@@ -24,19 +24,16 @@ public class SubarrayWithGivenSum {
         int sum=0,inipos=0,finPos=-1;
         for (int i=0;i<n;i++){
             sum+=arr[i];
-
             if(sum>s){
               while(sum>s){
                   sum=sum-arr[inipos];
                   inipos++;
               }
             }
-
             if(sum==s){
                 finPos=i;
                 break;
             }
-
         }
         if(finPos==-1)
             res.add(-1);

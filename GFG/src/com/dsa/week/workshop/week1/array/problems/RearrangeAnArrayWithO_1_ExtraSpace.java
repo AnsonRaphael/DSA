@@ -14,6 +14,7 @@ public class RearrangeAnArrayWithO_1_ExtraSpace {
         for (int i=0;i<n;i++){
             arr[i]+=(arr[(int) arr[i]])%n*n;
         }
+        //b=(a+b*n)/n
         for(int i=0;i<n;i++){
             arr[i]=(arr[i]/n);
         }
