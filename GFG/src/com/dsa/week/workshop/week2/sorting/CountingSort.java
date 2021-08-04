@@ -19,11 +19,11 @@ public class CountingSort {
             count[arr[i]-min]++;
         for (int i=1;i<range;i++)
             count[i]+=count[i-1];
-        System.out.println(Arrays.toString(count));
+
         for (int i=n-1;i>=0;i--){
 
             result[count[arr[i]-min]-1]=arr[i];
-            System.out.println(Arrays.toString(result));
+
             --count[arr[i]-min];
         }
 
