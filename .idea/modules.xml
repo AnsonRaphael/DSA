@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm/Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CC/CC.iml" filepath="$PROJECT_DIR$/CC/CC.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DSA.iml" filepath="$PROJECT_DIR$/.idea/DSA.iml" />
       <module fileurl="file://$PROJECT_DIR$/GFG/GFG.iml" filepath="$PROJECT_DIR$/GFG/GFG.iml" />
       <module fileurl="file://$PROJECT_DIR$/HackerEarthCoding/HackerEarthCoding.iml" filepath="$PROJECT_DIR$/HackerEarthCoding/HackerEarthCoding.iml" />
