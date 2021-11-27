@@ -1,22 +1,20 @@
-package com.nanos.dsa.arrays.searching.binaryleetcode;
+package com.nanos.dsa.sorting;
 
 import java.util.Arrays;
 
 public class SpecialArrayWithXElementsGreaterThanEqualX {
     public static void main(String[] args) {
-        int[] nums={1,0,0,6,4,9};
-        //int[] nums={3,9,7,8,3,8,6,6};
-
+        int[] nums={3,9,7,8,3,8,6,6};
         System.out.println(specialArray(nums));
     }
     public static int specialArray(int[] nums) {
         Arrays.sort(nums);
         for(int i=0;i<=nums.length;i++){
-            int m=ceilSearch(nums,0,nums.length-1,i);
-            int l=nums.length-m;
-            if(l==i){
-                return i;
-            }
+           int m=ceilSearch(nums,0,nums.length-1,i);
+           int l=nums.length-m;
+           if(l==i){
+               return i;
+           }
         }
         return -1;
     }
@@ -36,4 +34,5 @@ public class SpecialArrayWithXElementsGreaterThanEqualX {
         }
         return res;
     }
+
 }
