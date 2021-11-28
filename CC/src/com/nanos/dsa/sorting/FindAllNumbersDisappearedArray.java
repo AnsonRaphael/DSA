@@ -29,4 +29,28 @@ public class FindAllNumbersDisappearedArray {
         return rus;
 
     }
+    public List<Integer> findDisappearedNumbers2(int[] nums) {
+        int i=0;
+        List<Integer> res = new ArrayList<>();
+        while(i<nums.length){
+            int correctIndex =nums[i]-1;
+            if(nums[correctIndex]!=nums[i]){
+                swap(nums,correctIndex,i);
+            }else{
+                i++;
+            }
+        }
+
+        for(int j=0;j<nums.length;j++){
+            if((j+1)!=nums[j]){
+                res.add(j+1);
+            }
+        }
+        return res;
+    }
+    public static void swap(int [] nums,int i,int j){
+        int t=nums[i];
+        nums[i]=nums[j];
+        nums[j]=t;
+    }
 }

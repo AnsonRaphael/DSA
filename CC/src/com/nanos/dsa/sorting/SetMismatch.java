@@ -30,22 +30,27 @@ public class SetMismatch {
 
         int rep=nums[0],mis=1;
         int i=0;
+        int []res=new int[2];
         while(i<nums.length){
 
-            int index=Math.abs(nums[i])-1;
-            if(nums[index]<0){
-                rep=index+1;
+            int correctIndex=nums[i]-1;
+
+            if(nums[correctIndex]!=nums[i]){
+                swap(nums,correctIndex,i);
             }else {
-                nums[index] *= -1;
+                i++;
             }
-            i++;
+
+
+
         }
         for( i=0;i<nums.length;i++){
-            if(nums[i]>0){
-                mis=i+1;
+            if(nums[i]!=i+1){
+                res[0]=nums[i];
+                res[1]=i+1;
             }
         }
-        int []res={rep,mis};
+
         return res;
 
     }
