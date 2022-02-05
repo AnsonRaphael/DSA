@@ -31,40 +31,51 @@ public class SymmetricTree {
         o2.right=o5;
         o3.left=o7;
         o3.right=o6;
-        System.out.println(isSymmetric(o1));
+        System.out.println(isSymmetric1(o1));
     }
+    // iterative
     public static boolean isSymmetric(TreeNode root) {
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
         if(root==null)
             return true;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root.left);
+        queue.add(root.right);
         while (!queue.isEmpty()){
-            int size= queue.size();
-            int [] arr= new int[size];
-            for (int i = 0; i < size; i++) {
-                TreeNode tmp=queue.poll();
-                if(tmp==null)
-                    arr[i]=-200;
-                else
-                    arr[i]=tmp.val;
-                if(tmp!=null&&tmp.left!=null)
-                    queue.offer(tmp.left);
-                else
-                    queue.offer(null);
-                if(tmp!=null&&tmp.right!=null)
-                    queue.offer(tmp.right);
-                else
-                    queue.offer(null);
-            }
-            int st=0,en=size-1;
-            while (st<=en){
-                if(arr[st]!=arr[en])
-                    return false;
-                st++;
-                en--;
-            }
+            TreeNode lef=queue.poll();
+            TreeNode right=queue.poll();
+            if(lef==null&&right==null)
+                continue;
+            if(lef==null&&right!=null||lef!=null&&right==null)
+                return false;
+            if(lef.val!=right.val)
+                return false;
 
+            queue.offer(lef.left);
+
+            queue.offer(right.right);
+
+            queue.offer(lef.right);
+
+            queue.offer(right.left);
         }
+
         return true;
+    }
+
+    public static boolean isSymmetric1(TreeNode root) {
+        if(root==null)
+            return true;
+
+        return isSymmetricCheck(root.left,root.right);
+    }
+    public static boolean isSymmetricCheck(TreeNode left,TreeNode right) {
+        if(left==null&&right==null)
+            return true;
+        if((left==null&&right!=null)||(left!=null&&right==null))
+            return false;
+        if(left.val!=right.val)
+            return false;
+        return isSymmetricCheck(left.left,right.right)&&isSymmetricCheck(left.right,right.left);
+
     }
 }
