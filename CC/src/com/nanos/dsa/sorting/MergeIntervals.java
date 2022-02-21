@@ -12,6 +12,7 @@ public class MergeIntervals {
         Arrays.sort(intervals,(a, b) -> {
             return Integer.compare(a[0],b[0]);
         });
+
         ArrayList<int[]> res= new ArrayList<>();
         int start=intervals[0][0];
         int end=intervals[0][1];
