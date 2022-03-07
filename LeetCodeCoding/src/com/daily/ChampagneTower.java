@@ -1,7 +1,6 @@
 package com.daily;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class ChampagneTower {
     public static void main(String[] args) {
