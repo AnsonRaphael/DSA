@@ -28,6 +28,7 @@ public class MaximumFrequencyStack {
                 nes.push(val);
                freqStackMap.put(freqFound,nes);
            }
+
         }
 
         public int pop() {
