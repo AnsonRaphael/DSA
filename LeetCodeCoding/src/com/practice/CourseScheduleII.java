@@ -19,6 +19,8 @@ public class CourseScheduleII {
         //int[][]prerequisites = {{1,0}};
         int[][] prerequisites={{1,0},{1,2},{0,1}};
         System.out.println(Arrays.toString(findOrder(numCourses,prerequisites)));
+
+
     }
     public static int[] findOrder(int numCourses, int[][] prerequisites) {
         // adjecency list

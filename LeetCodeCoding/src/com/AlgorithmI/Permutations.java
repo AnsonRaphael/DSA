@@ -6,7 +6,7 @@ import java.util.List;
 public class Permutations {
     public static void main(String[] args) {
         int[] nums={1,2,3};
-
+       // int[] nums={1,1,2};
         System.out.println(permute(nums));
     }
     public static List<List<Integer>> permute(int[] nums) {
